@@ -1,4 +1,6 @@
-package P1;
+package p2;
+
+import p2.Node;
 
 public class Node {
 	private int Nilai;
@@ -25,5 +27,5 @@ public class Node {
 		return Next;
 	}
 
-	
+
 }

@@ -1,4 +1,6 @@
-package P1;
+package p2;
+
+import p2.Node;
 
 public class NodeMain {
 	public static void main(String[] args) {
@@ -23,14 +25,14 @@ public class NodeMain {
 		n6.setNext(n1);
 		
 		//menampilkan Node n1,n2,n3,n4,n5 & n6 dengan pointer p
-		Node p = n1;
+		//Node p = n1;
 		Node p1 = n5;
-		while(p != null)
+		//while(p != null)
 		{
-			System.out.printf("%d ", p.getNilai());
-			p = p.getNext();
+			//System.out.printf("%d ", p.getNilai());
+			//p = p.getNext();
 		}
-		System.out.println("");
+		  System.out.println("");
 		while(p1 != n4)
 		{
 			System.out.printf("%d ", p1.getNilai());
@@ -39,4 +41,3 @@ public class NodeMain {
 	}
 
 }
-
