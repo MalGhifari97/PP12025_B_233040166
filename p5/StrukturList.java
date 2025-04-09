@@ -84,23 +84,24 @@ public class StrukturList {
     }
 
     
-    public void removeTail() {
-        if(isEmpty()) {
-            System.out.println("List is empty");
-        } else {
-            Node lastNode = HEAD;
-            Node preNode = null;
-
-            while (lastNode.getNext() != null) {
-                preNode = lastNode;
-                lastNode = lastNode.getNext();
-                
-            }
-
-            preNode.setNext(null);
-            dispose (lastNode);
-        }
-    }
+   public void removeTail() {
+		Node preNode = null, LastNode;
+		if (HEAD != null) {
+			if (HEAD.getNext() == null) {
+				HEAD = null;
+			} else {
+				LastNode = HEAD;
+				while (LastNode.getNext() != null) {
+					preNode = LastNode;
+					LastNode = LastNode.getNext();
+				}
+				preNode.setNext(null);
+				dispose(LastNode);
+			}
+		} else {
+			System.out.println("List Kosong");
+		}
+	}
 
 
     public static void main(String[] args) {
