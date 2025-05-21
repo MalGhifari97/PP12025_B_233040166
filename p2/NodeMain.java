@@ -4,7 +4,6 @@ import p2.Node;
 
 public class NodeMain {
 	public static void main(String[] args) {
-		//membuat 6 buah node n1,n2,n3,n4,n5 & n6
 		Node n1 = new Node (5);
 		Node n2 = new Node (7);
 		Node n3 = new Node (9);
@@ -13,7 +12,7 @@ public class NodeMain {
 		Node n6 = new Node (3);
 		
 		
-		//membuat relasi Node n1,n2,n3,n4,n5, & n6
+		
 		n1.setNext(n2);
 		
 		n2.setNext(n3);
@@ -24,7 +23,7 @@ public class NodeMain {
 		
 		n6.setNext(n1);
 		
-		//menampilkan Node n1,n2,n3,n4,n5 & n6 dengan pointer p
+		
 		//Node p = n1;
 		Node p1 = n5;
 		//while(p != null)
